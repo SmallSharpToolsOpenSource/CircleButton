@@ -2,6 +2,10 @@
 
 ### Easy way to create buttons masked in a circle with colored border without the antialiasing distortion
 
+<div style="float: right;">
+![Circle Buttons](https://raw.github.com/brennanMKE/CircleButton/master/CircleButtons.png)
+</div>
+
 When setting the corner radius, border color and border width there is often bleeding through to the 
 edges as is seen with the screenshot from the StackOverflow question below. This approach eliminates
 the bleeding by embedding the masked view without a superview which can also be make circular.
