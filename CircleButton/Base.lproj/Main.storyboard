@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SSTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7e4-v7-6eR"/>
+                        <viewControllerLayoutGuide type="bottom" id="kDp-Bw-J1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-PN-W0Q">
+                                <rect key="frame" x="90" y="160" width="140" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-0x-pQi" customClass="SSTCircleWrapperView">
+                                        <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drq-oR-2rt" customClass="SSTCircleButton">
+                                                <rect key="frame" x="2" y="2" width="96" height="96"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="Photo.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="EAp-fV-ufg"/>
+                                            <constraint firstAttribute="width" constant="100" id="GEP-Kq-g5j"/>
+                                            <constraint firstItem="Drq-oR-2rt" firstAttribute="top" secondItem="n8h-0x-pQi" secondAttribute="top" constant="2" id="lJc-Ez-LS9"/>
+                                            <constraint firstAttribute="trailing" secondItem="Drq-oR-2rt" secondAttribute="trailing" constant="2" id="rvv-d1-aN5"/>
+                                            <constraint firstItem="Drq-oR-2rt" firstAttribute="leading" secondItem="n8h-0x-pQi" secondAttribute="leading" constant="2" id="uPl-0N-skY"/>
+                                            <constraint firstAttribute="bottom" secondItem="Drq-oR-2rt" secondAttribute="bottom" constant="2" id="wb7-gY-frw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-zv-bHq" customClass="SSTCircleWrapperView">
+                                        <rect key="frame" x="20" y="128" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-d6-2ja" customClass="SSTCircleView">
+                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="QWY-Cw-cVh"/>
+                                            <constraint firstItem="z6W-d6-2ja" firstAttribute="leading" secondItem="CTQ-zv-bHq" secondAttribute="leading" constant="10" id="Wgf-D3-STn"/>
+                                            <constraint firstAttribute="trailing" secondItem="z6W-d6-2ja" secondAttribute="trailing" constant="10" id="ed3-bO-hMe"/>
+                                            <constraint firstItem="z6W-d6-2ja" firstAttribute="top" secondItem="CTQ-zv-bHq" secondAttribute="top" constant="10" id="qKc-xp-hju"/>
+                                            <constraint firstAttribute="height" constant="100" id="qiS-83-c2D"/>
+                                            <constraint firstAttribute="bottom" secondItem="z6W-d6-2ja" secondAttribute="bottom" constant="10" id="tJb-fE-06Z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="0lv-p0-61T"/>
+                                    <constraint firstAttribute="trailing" secondItem="CTQ-zv-bHq" secondAttribute="trailing" constant="20" id="2Jf-S7-nEQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="n8h-0x-pQi" secondAttribute="trailing" constant="20" id="98x-BE-Nnd"/>
+                                    <constraint firstItem="CTQ-zv-bHq" firstAttribute="leading" secondItem="Z3Q-PN-W0Q" secondAttribute="leading" constant="20" id="NUi-p4-PFz"/>
+                                    <constraint firstAttribute="width" constant="140" id="X6g-fH-6OC"/>
+                                    <constraint firstItem="n8h-0x-pQi" firstAttribute="leading" secondItem="Z3Q-PN-W0Q" secondAttribute="leading" constant="20" id="Zaz-ml-8ci"/>
+                                    <constraint firstAttribute="bottom" secondItem="CTQ-zv-bHq" secondAttribute="bottom" constant="20" id="mQV-WE-Roz"/>
+                                    <constraint firstItem="n8h-0x-pQi" firstAttribute="top" secondItem="Z3Q-PN-W0Q" secondAttribute="top" constant="20" id="wrv-UL-5Xd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9263392857142857" green="0.9263392857142857" blue="0.9263392857142857" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Z3Q-PN-W0Q" secondAttribute="centerX" id="XdA-pq-BSJ"/>
+                            <constraint firstAttribute="centerY" secondItem="Z3Q-PN-W0Q" secondAttribute="centerY" id="zYL-df-fTl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo.jpg" width="400" height="400"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
