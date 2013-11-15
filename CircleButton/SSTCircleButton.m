@@ -10,16 +10,17 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "SSTCircleWrapperView.h"
-
 @implementation SSTCircleButton
 
-- (void)drawRect:(CGRect)rect {
-    // round view and superview with a border using the background color of the superview
-    self.layer.cornerRadius = CGRectGetWidth(self.frame) / 2;
-    self.layer.masksToBounds = YES;
+- (void)layoutSubviews {
+    [super layoutSubviews];
     
-    if ([self.superview isKindOfClass:[SSTCircleWrapperView class]]) {
+    CGFloat cornerRadius = CGRectGetWidth(self.frame) / 2;
+    
+    if (self.layer.cornerRadius != cornerRadius) {
+        self.layer.cornerRadius = cornerRadius;
+        self.layer.masksToBounds = YES;
+        
         self.superview.layer.cornerRadius = CGRectGetWidth(self.superview.frame) / 2;
         self.superview.layer.masksToBounds = YES;
         self.superview.layer.borderColor = self.superview.backgroundColor.CGColor;

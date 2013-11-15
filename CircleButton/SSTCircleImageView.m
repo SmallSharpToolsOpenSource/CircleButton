@@ -1,16 +1,16 @@
 //
-//  SSTCircleView.m
+//  SSTCircleImageView.m
 //  CircleButton
 //
-//  Created by Brennan Stehling on 11/13/13.
+//  Created by Brennan Stehling on 11/15/13.
 //  Copyright (c) 2013 SmallSharpTools LLC. All rights reserved.
 //
 
-#import "SSTCircleView.h"
+#import "SSTCircleImageView.h"
 
 #import <QuartzCore/QuartzCore.h>
 
-@implementation SSTCircleView
+@implementation SSTCircleImageView
 
 - (void)layoutSubviews {
     [super layoutSubviews];

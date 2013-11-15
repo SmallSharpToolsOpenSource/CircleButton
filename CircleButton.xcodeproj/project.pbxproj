@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267836E21835F02C001DA68A /* SSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267836E11835F02C001DA68A /* SSTTableViewController.m */; };
+		267836E51835F475001DA68A /* SSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267836E41835F475001DA68A /* SSTCollectionViewController.m */; };
+		267836E81836031B001DA68A /* SSTCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 267836E71836031B001DA68A /* SSTCircleImageView.m */; };
 		2699DADC18334A93008E7DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DADB18334A93008E7DC3 /* Foundation.framework */; };
 		2699DADE18334A93008E7DC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DADD18334A93008E7DC3 /* CoreGraphics.framework */; };
 		2699DAE018334A93008E7DC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DADF18334A93008E7DC3 /* UIKit.framework */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		267836E01835F02C001DA68A /* SSTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTTableViewController.h; sourceTree = "<group>"; };
+		267836E11835F02C001DA68A /* SSTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTTableViewController.m; sourceTree = "<group>"; };
+		267836E31835F475001DA68A /* SSTCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTCollectionViewController.h; sourceTree = "<group>"; };
+		267836E41835F475001DA68A /* SSTCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTCollectionViewController.m; sourceTree = "<group>"; };
+		267836E61836031B001DA68A /* SSTCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTCircleImageView.h; sourceTree = "<group>"; };
+		267836E71836031B001DA68A /* SSTCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTCircleImageView.m; sourceTree = "<group>"; };
 		2699DAD818334A93008E7DC3 /* CircleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2699DADB18334A93008E7DC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2699DADD18334A93008E7DC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,14 +137,20 @@
 				2699DAEA18334A93008E7DC3 /* SSTAppDelegate.h */,
 				2699DAEB18334A93008E7DC3 /* SSTAppDelegate.m */,
 				2699DAED18334A93008E7DC3 /* Main.storyboard */,
-				2699DAF018334A93008E7DC3 /* SSTViewController.h */,
-				2699DAF118334A93008E7DC3 /* SSTViewController.m */,
 				2699DB1218334BCB008E7DC3 /* SSTCircleButton.h */,
 				2699DB1318334BCB008E7DC3 /* SSTCircleButton.m */,
 				2699DB181833552C008E7DC3 /* SSTCircleView.h */,
 				2699DB191833552C008E7DC3 /* SSTCircleView.m */,
+				267836E61836031B001DA68A /* SSTCircleImageView.h */,
+				267836E71836031B001DA68A /* SSTCircleImageView.m */,
 				2699DB1518335481008E7DC3 /* SSTCircleWrapperView.h */,
 				2699DB1618335481008E7DC3 /* SSTCircleWrapperView.m */,
+				2699DAF018334A93008E7DC3 /* SSTViewController.h */,
+				2699DAF118334A93008E7DC3 /* SSTViewController.m */,
+				267836E01835F02C001DA68A /* SSTTableViewController.h */,
+				267836E11835F02C001DA68A /* SSTTableViewController.m */,
+				267836E31835F475001DA68A /* SSTCollectionViewController.h */,
+				267836E41835F475001DA68A /* SSTCollectionViewController.m */,
 			);
 			path = CircleButton;
 			sourceTree = "<group>";
@@ -218,6 +233,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "SmallSharpTools LLC";
 				TargetAttributes = {
+					2699DAD718334A93008E7DC3 = {
+						DevelopmentTeam = M3FCT79SM9;
+					};
 					2699DAF818334A93008E7DC3 = {
 						TestTargetID = 2699DAD718334A93008E7DC3;
 					};
@@ -270,9 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2699DB1418334BCB008E7DC3 /* SSTCircleButton.m in Sources */,
+				267836E81836031B001DA68A /* SSTCircleImageView.m in Sources */,
 				2699DB1A1833552C008E7DC3 /* SSTCircleView.m in Sources */,
+				267836E21835F02C001DA68A /* SSTTableViewController.m in Sources */,
 				2699DAE818334A93008E7DC3 /* main.m in Sources */,
 				2699DAEC18334A93008E7DC3 /* SSTAppDelegate.m in Sources */,
+				267836E51835F475001DA68A /* SSTCollectionViewController.m in Sources */,
 				2699DAF218334A93008E7DC3 /* SSTViewController.m in Sources */,
 				2699DB1718335481008E7DC3 /* SSTCircleWrapperView.m in Sources */,
 			);
@@ -401,10 +422,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
 				INFOPLIST_FILE = "CircleButton/CircleButton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A65DD2A2-056D-496A-8702-B360340B1D21";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -414,10 +437,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
 				INFOPLIST_FILE = "CircleButton/CircleButton-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A65DD2A2-056D-496A-8702-B360340B1D21";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -483,6 +508,7 @@
 				2699DB0C18334A93008E7DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2699DB0D18334A93008E7DC3 /* Build configuration list for PBXNativeTarget "CircleButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +517,7 @@
 				2699DB0F18334A93008E7DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
