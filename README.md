@@ -1,8 +1,8 @@
 # Circle Button
 
-### Easy way to create buttons masked in a circle with colored border without the antialiasing distortion
+### Easy way to create buttons masked in a circle with colored border without the anti-aliasing distortion
 
-<div style="float: right"><img src="../master/CircleButtons.png" style="width: 100px" alt="" /></div>
+<img src="../master/CircleButtons.png" style="width: 200px; float: right;" alt="" />
 
 When setting the corner radius, border color and border width there is often bleeding through to the 
 edges as is seen with the screenshot from the StackOverflow question below. This approach eliminates
