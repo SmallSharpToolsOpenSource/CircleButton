@@ -28,4 +28,23 @@
     }
 }
 
+- (CGRect)backgroundRectForBounds:(CGRect)bounds {
+    UIImage *backgroundImage = [self backgroundImageForState:self.state];
+    if (backgroundImage) {
+        CGFloat maxWidth = CGRectGetWidth(self.frame);
+        
+        CGFloat xDelta = maxWidth / backgroundImage.size.width;
+        CGFloat yDelta = maxWidth / backgroundImage.size.height;
+        CGFloat delta = xDelta > yDelta ? xDelta : yDelta;
+        
+        CGFloat x = floorf((self.bounds.size.width - (backgroundImage.size.width * delta)) / 2);
+        CGFloat y = floorf((self.bounds.size.height - (backgroundImage.size.height * delta)) / 2);
+        
+        return CGRectMake(x, y, backgroundImage.size.width * delta, backgroundImage.size.height * delta);
+    }
+    else {
+        return [super backgroundRectForBounds:bounds];
+    }
+}
+
 @end
