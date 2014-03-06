@@ -15,9 +15,26 @@ view is used for the border width.
 
 [StackOverflow Question](http://stackoverflow.com/questions/19565736/ios-rounded-rectangle-with-border-bleeds-color)
 
+## Usage
+
+To run the example project; clone the repo, and run `pod install` from the Example directory first.
+
+## Installation
+
+CircleButtons is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
+
+    pod "CircleButtons"
+
 [Photo Credit](http://www.fanpop.com/clubs/candice-accola/images/16474223/title/new-hq-headshot-photo)
 
-### Brennan Stehling
-#### SmallSharpTools.com
+## License
 
-Find me on [Twitter](http://twitter.com/smallsharptools) and [App.net](http://alpha.app.net/smallsharptools).
+CircleButton is available under the MIT license. See the LICENSE file for more info.
+
+## Contact
+
+Brennan Stehling  
+[SmallSharpTools](http://www.smallsharptools.com/)  
+[@smallsharptools](https://twitter.com/smallsharptools) (Twitter)  
+
