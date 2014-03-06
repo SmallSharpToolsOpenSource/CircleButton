@@ -17,10 +17,10 @@ the bleeding by embedding the masked view without a superview which can also be 
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  s.source_files = '*'
+  s.source_files = 'Classes/*'
 
   s.ios.exclude_files = 'Sample'
   s.osx.exclude_files = 'Sample'
-  s.public_header_files = '*.h'
+  s.public_header_files = 'Classes/*.h'
   s.frameworks = 'QuartzCore'
 end
