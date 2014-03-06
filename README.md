@@ -26,6 +26,11 @@ it simply add the following line to your Podfile:
 
     pod "CircleButtons"
 
+or
+
+    platform :ios, "7.0"
+    pod 'CircleButton', :git => 'https://github.com/brennanMKE/CircleButton.git', :tag => '0.0.1'
+
 [Photo Credit](http://www.fanpop.com/clubs/candice-accola/images/16474223/title/new-hq-headshot-photo)
 
 ## License
