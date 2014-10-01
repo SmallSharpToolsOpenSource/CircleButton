@@ -8,3 +8,7 @@ Initial release.
 
 Podspec release.
 
+## 1.0.0
+
+Updated Podspec version to 1.0.0 and updated README.
+
