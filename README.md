@@ -19,17 +19,17 @@ view is used for the border width.
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
 
-## Installation
+## CocoaPods
 
 CircleButtons is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod "CircleButtons"
+    pod 'CircleButton', '~> 1.0'
 
 or
 
     platform :ios, "7.0"
-    pod 'CircleButton', :git => 'https://github.com/brennanMKE/CircleButton.git', :tag => '0.0.1'
+    pod 'CircleButton', :git => 'https://github.com/brennanMKE/CircleButton.git', :tag => '1.0.0'
 
 [Photo Credit](http://www.fanpop.com/clubs/candice-accola/images/16474223/title/new-hq-headshot-photo)
 
