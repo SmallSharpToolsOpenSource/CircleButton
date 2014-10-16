@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+extern CGFloat const SSTCircleButtonBorderAnimationDuration;
+
 @interface SSTCircleButton : UIButton
 
 @property (assign, nonatomic, getter=isBorderHidden) BOOL borderHidden;
+@property (assign, nonatomic) CGFloat borderAnimationDuration; // default = 0.25f
+
+- (void)setBorderHidden:(BOOL)borderHidden animated:(BOOL)animated;
 
 @end

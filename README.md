@@ -28,7 +28,7 @@ it simply add the following line to your Podfile:
 
 or
 
-    pod 'CircleButton', :git => 'https://github.com/brennanMKE/CircleButton.git', :tag => '1.1.0'
+    pod 'CircleButton', :git => 'https://github.com/brennanMKE/CircleButton.git', :tag => '1.1.1'
 
 [Photo Credit](http://www.fanpop.com/clubs/candice-accola/images/16474223/title/new-hq-headshot-photo)
 

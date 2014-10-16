@@ -12,6 +12,8 @@
 
 #import "SSTCircleWrapperView.h"
 
+CGFloat const SSTCircleButtonBorderAnimationDuration = 0.25f;
+
 #pragma mark - Class Extension
 #pragma mark -
 
@@ -22,6 +24,14 @@
 @end
 
 @implementation SSTCircleButton
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        _borderAnimationDuration = SSTCircleButtonBorderAnimationDuration;
+    }
+    return self;
+}
 
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -65,16 +75,30 @@
 }
 
 - (void)setBorderHidden:(BOOL)borderHidden {
+    [self setBorderHidden:borderHidden animated:FALSE];
+}
+
+- (void)setBorderHidden:(BOOL)borderHidden animated:(BOOL)animated {
+    if (_borderHidden == borderHidden) {
+        return;
+    }
+    
     _borderHidden = borderHidden;
     
-    if (borderHidden) {
-        self.superview.layer.borderColor = [[UIColor clearColor] CGColor];
-        self.superview.layer.borderWidth = 0.0;
+    UIColor *fromColor = borderHidden ? self.borderColor : [UIColor clearColor];
+    UIColor *toColor = borderHidden ? [UIColor clearColor] : self.borderColor;
+    
+    if (animated) {
+        CABasicAnimation *color = [CABasicAnimation animationWithKeyPath:@"borderColor"];
+        color.fromValue = (id)fromColor.CGColor;
+        color.toValue   = (id)toColor.CGColor;
+        color.duration = _borderAnimationDuration;
+        color.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        
+        [self.superview.layer addAnimation:color forKey:@"color and width"];
     }
-    else {
-        self.superview.layer.borderColor = self.borderColor.CGColor;
-        self.superview.layer.borderWidth = (CGRectGetWidth(self.superview.frame) - CGRectGetWidth(self.frame)) / 2;
-    }
+    
+    self.superview.layer.borderColor = toColor.CGColor;
 }
 
 @end

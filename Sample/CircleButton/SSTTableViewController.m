@@ -21,7 +21,8 @@
 
 - (IBAction)circleButtonTapped:(SSTCircleButton *)button {
     DebugLog(@"%@", NSStringFromSelector(_cmd));
-    button.borderHidden = !button.borderHidden;
+    button.borderAnimationDuration = 0.25f;
+    [button setBorderHidden:!button.borderHidden animated:TRUE];
 }
 
 #pragma mark - UITableViewDataSource
