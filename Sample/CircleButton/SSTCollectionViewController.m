@@ -8,11 +8,21 @@
 
 #import "SSTCollectionViewController.h"
 
+#import "SSTCircleButton.h"
+
 @interface SSTCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
 
 @implementation SSTCollectionViewController
+
+#pragma mark - User Actions
+#pragma mark -
+
+- (IBAction)circleButtonTapped:(SSTCircleButton *)button {
+    DebugLog(@"%@", NSStringFromSelector(_cmd));
+    button.borderHidden = !button.borderHidden;
+}
 
 #pragma mark - UICollectionViewDataSource
 #pragma mark -

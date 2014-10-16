@@ -8,11 +8,21 @@
 
 #import "SSTTableViewController.h"
 
+#import "SSTCircleButton.h"
+
 @interface SSTTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
 @implementation SSTTableViewController
+
+#pragma mark - User Actions
+#pragma mark -
+
+- (IBAction)circleButtonTapped:(SSTCircleButton *)button {
+    DebugLog(@"%@", NSStringFromSelector(_cmd));
+    button.borderHidden = !button.borderHidden;
+}
 
 #pragma mark - UITableViewDataSource
 #pragma mark -

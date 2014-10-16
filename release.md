@@ -6,7 +6,9 @@ update README.md
 
     pod lib lint
 
-    git add -A && git commit -m "Release 0.0.1."
-    git tag '0.0.1'
+    git add -A && git commit -m "Release 1.0.0."
+    git tag '1.0.0'
     git push --tags
+
+    pod trunk push  CircleButton.podspec
 

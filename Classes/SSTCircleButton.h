@@ -10,4 +10,6 @@
 
 @interface SSTCircleButton : UIButton
 
+@property (assign, nonatomic, getter=isBorderHidden) BOOL borderHidden;
+
 @end

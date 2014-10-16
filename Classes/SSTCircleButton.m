@@ -12,6 +12,15 @@
 
 #import "SSTCircleWrapperView.h"
 
+#pragma mark - Class Extension
+#pragma mark -
+
+@interface SSTCircleButton ()
+
+@property (strong, nonatomic) UIColor *borderColor;
+
+@end
+
 @implementation SSTCircleButton
 
 - (void)layoutSubviews {
@@ -20,14 +29,18 @@
     CGFloat cornerRadius = CGRectGetWidth(self.frame) / 2;
     
     if (self.layer.cornerRadius != cornerRadius) {
+        self.borderColor = self.superview.backgroundColor;
+        
         self.layer.cornerRadius = cornerRadius;
         self.layer.masksToBounds = YES;
         
         if ([self.superview isKindOfClass:[SSTCircleWrapperView class]]) {
             self.superview.layer.cornerRadius = CGRectGetWidth(self.superview.frame) / 2;
             self.superview.layer.masksToBounds = YES;
-            self.superview.layer.borderColor = self.superview.backgroundColor.CGColor;
+            
+            self.superview.layer.borderColor = self.borderColor.CGColor;
             self.superview.layer.borderWidth = (CGRectGetWidth(self.superview.frame) - CGRectGetWidth(self.frame)) / 2;
+            self.superview.backgroundColor = [UIColor clearColor];
         }
     }
 }
@@ -48,6 +61,19 @@
     }
     else {
         return [super backgroundRectForBounds:bounds];
+    }
+}
+
+- (void)setBorderHidden:(BOOL)borderHidden {
+    _borderHidden = borderHidden;
+    
+    if (borderHidden) {
+        self.superview.layer.borderColor = [[UIColor clearColor] CGColor];
+        self.superview.layer.borderWidth = 0.0;
+    }
+    else {
+        self.superview.layer.borderColor = self.borderColor.CGColor;
+        self.superview.layer.borderWidth = (CGRectGetWidth(self.superview.frame) - CGRectGetWidth(self.frame)) / 2;
     }
 }
 

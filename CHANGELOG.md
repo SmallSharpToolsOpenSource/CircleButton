@@ -12,3 +12,7 @@ Podspec release.
 
 Updated Podspec version to 1.0.0 and updated README.
 
+## 1.1.0
+
+Added support to hide the border for a button with the new `borderHidden` property.
+

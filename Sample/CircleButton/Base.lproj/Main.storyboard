@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SbH-uk-Nf5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SbH-uk-Nf5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Basic-->
+        <!--Basic-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="SSTViewController" sceneMemberID="viewController">
@@ -18,22 +19,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyh-g3-Hmk" userLabel="Container View">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-PN-W0Q" userLabel="Inner Container View">
                                         <rect key="frame" x="36" y="158" width="248" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-0x-pQi" customClass="SSTCircleWrapperView">
                                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drq-oR-2rt" customClass="SSTCircleButton">
+                                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drq-oR-2rt" userLabel="Circle Button" customClass="SSTCircleButton">
                                                         <rect key="frame" x="2" y="2" width="96" height="96"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" backgroundImage="Photo.jpg">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="circleButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="isf-Cb-9Cx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -48,11 +48,9 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-zv-bHq" customClass="SSTCircleWrapperView">
                                                 <rect key="frame" x="128" y="20" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-d6-2ja" customClass="SSTCircleView">
                                                         <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
                                                 </subviews>
@@ -120,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="244" y="101"/>
         </scene>
-        <!--Table View Controller - Table-->
+        <!--Table-->
         <scene sceneID="G8b-pw-aLX">
             <objects>
                 <viewController id="eCf-Nq-0Eu" customClass="SSTTableViewController" sceneMemberID="viewController">
@@ -134,7 +132,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SoK-ty-LBc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OddCell" rowHeight="140" id="PRB-wQ-aen">
@@ -146,14 +143,15 @@
                                             <subviews>
                                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63t-a7-82x" customClass="SSTCircleWrapperView">
                                                     <rect key="frame" x="110" y="20" width="100" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg7-ul-Nde" customClass="SSTCircleButton">
+                                                        <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg7-ul-Nde" userLabel="Circle Button" customClass="SSTCircleButton">
                                                             <rect key="frame" x="2" y="2" width="96" height="96"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" backgroundImage="Photo.jpg">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="circleButtonTapped:" destination="eCf-Nq-0Eu" eventType="touchUpInside" id="9SK-aW-lV8"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -183,11 +181,9 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ux6-JR-lX0" customClass="SSTCircleWrapperView">
                                                     <rect key="frame" x="110" y="20" width="100" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-G7-1Cd" customClass="SSTCircleView">
                                                             <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
                                                     </subviews>
@@ -230,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="1360" y="516"/>
         </scene>
-        <!--Collection View Controller - Collection-->
+        <!--Collection-->
         <scene sceneID="o9r-Yd-6tP">
             <objects>
                 <viewController id="i2y-m4-AxU" customClass="SSTCollectionViewController" sceneMemberID="viewController">
@@ -244,7 +240,6 @@
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qku-W3-vsF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="iL4-GY-N1h">
                                     <size key="itemSize" width="70" height="70"/>
@@ -262,14 +257,15 @@
                                             <subviews>
                                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8r-Ug-FHb" customClass="SSTCircleWrapperView">
                                                     <rect key="frame" x="10" y="10" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX2-e4-4lL" customClass="SSTCircleButton">
+                                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX2-e4-4lL" userLabel="Circle Button" customClass="SSTCircleButton">
                                                             <rect key="frame" x="2" y="2" width="46" height="46"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" backgroundImage="Photo.jpg">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="circleButtonTapped:" destination="i2y-m4-AxU" eventType="touchUpInside" id="RgH-yn-c2g"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -299,11 +295,9 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpE-bs-LLE" customClass="SSTCircleWrapperView">
                                                     <rect key="frame" x="10" y="10" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLR-qc-MA3" customClass="SSTCircleView">
                                                             <rect key="frame" x="10" y="10" width="30" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
                                                     </subviews>
@@ -346,7 +340,7 @@
             </objects>
             <point key="canvasLocation" x="1360" y="1232"/>
         </scene>
-        <!--Navigation Controller - Collection-->
+        <!--Collection-->
         <scene sceneID="xJz-jy-Pq3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lhZ-Tc-1AN" sceneMemberID="viewController">
@@ -366,7 +360,7 @@
             </objects>
             <point key="canvasLocation" x="834" y="1232"/>
         </scene>
-        <!--Navigation Controller - Table-->
+        <!--Table-->
         <scene sceneID="fLg-NN-5bs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BRP-r0-9oN" sceneMemberID="viewController">
@@ -386,7 +380,7 @@
             </objects>
             <point key="canvasLocation" x="834" y="516"/>
         </scene>
-        <!--Navigation Controller - Basic-->
+        <!--Basic-->
         <scene sceneID="Cg7-L1-fHU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWC-cF-k6J" sceneMemberID="viewController">
