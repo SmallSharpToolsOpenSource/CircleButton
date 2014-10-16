@@ -95,7 +95,7 @@ CGFloat const SSTCircleButtonBorderAnimationDuration = 0.25f;
         color.duration = _borderAnimationDuration;
         color.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
         
-        [self.superview.layer addAnimation:color forKey:@"color and width"];
+        [self.superview.layer addAnimation:color forKey:@"color"];
     }
     
     self.superview.layer.borderColor = toColor.CGColor;
