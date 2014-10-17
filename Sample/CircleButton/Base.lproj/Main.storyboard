@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SbH-uk-Nf5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SbH-uk-Nf5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
@@ -27,7 +27,7 @@
                                                 <rect key="frame" x="20" y="20" width="100" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drq-oR-2rt" userLabel="Circle Button" customClass="SSTCircleButton">
-                                                        <rect key="frame" x="2" y="2" width="96" height="96"/>
+                                                        <rect key="frame" x="4" y="4" width="92" height="92"/>
                                                         <state key="normal" backgroundImage="Photo.jpg">
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
@@ -40,10 +40,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="EAp-fV-ufg"/>
                                                     <constraint firstAttribute="width" constant="100" id="GEP-Kq-g5j"/>
-                                                    <constraint firstItem="Drq-oR-2rt" firstAttribute="top" secondItem="n8h-0x-pQi" secondAttribute="top" constant="2" id="lJc-Ez-LS9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Drq-oR-2rt" secondAttribute="trailing" constant="2" id="rvv-d1-aN5"/>
-                                                    <constraint firstItem="Drq-oR-2rt" firstAttribute="leading" secondItem="n8h-0x-pQi" secondAttribute="leading" constant="2" id="uPl-0N-skY"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Drq-oR-2rt" secondAttribute="bottom" constant="2" id="wb7-gY-frw"/>
+                                                    <constraint firstItem="Drq-oR-2rt" firstAttribute="top" secondItem="n8h-0x-pQi" secondAttribute="top" constant="4" id="lJc-Ez-LS9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Drq-oR-2rt" secondAttribute="trailing" constant="4" id="rvv-d1-aN5"/>
+                                                    <constraint firstItem="Drq-oR-2rt" firstAttribute="leading" secondItem="n8h-0x-pQi" secondAttribute="leading" constant="4" id="uPl-0N-skY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Drq-oR-2rt" secondAttribute="bottom" constant="4" id="wb7-gY-frw"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTQ-zv-bHq" customClass="SSTCircleWrapperView">
@@ -145,7 +145,7 @@
                                                     <rect key="frame" x="110" y="20" width="100" height="100"/>
                                                     <subviews>
                                                         <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qg7-ul-Nde" userLabel="Circle Button" customClass="SSTCircleButton">
-                                                            <rect key="frame" x="2" y="2" width="96" height="96"/>
+                                                            <rect key="frame" x="4" y="4" width="92" height="92"/>
                                                             <state key="normal" backgroundImage="Photo.jpg">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
@@ -156,12 +156,12 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="qg7-ul-Nde" firstAttribute="leading" secondItem="63t-a7-82x" secondAttribute="leading" constant="2" id="1kN-gN-vJF"/>
+                                                        <constraint firstItem="qg7-ul-Nde" firstAttribute="leading" secondItem="63t-a7-82x" secondAttribute="leading" constant="4" id="1kN-gN-vJF"/>
                                                         <constraint firstAttribute="height" constant="100" id="ZBf-7T-seD"/>
-                                                        <constraint firstAttribute="bottom" secondItem="qg7-ul-Nde" secondAttribute="bottom" constant="2" id="cdp-Hq-IN2"/>
-                                                        <constraint firstAttribute="trailing" secondItem="qg7-ul-Nde" secondAttribute="trailing" constant="2" id="ddu-O3-WSc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qg7-ul-Nde" secondAttribute="bottom" constant="4" id="cdp-Hq-IN2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qg7-ul-Nde" secondAttribute="trailing" constant="4" id="ddu-O3-WSc"/>
                                                         <constraint firstAttribute="width" constant="100" id="e7X-LW-KMt"/>
-                                                        <constraint firstItem="qg7-ul-Nde" firstAttribute="top" secondItem="63t-a7-82x" secondAttribute="top" constant="2" id="jGB-2e-fI3"/>
+                                                        <constraint firstItem="qg7-ul-Nde" firstAttribute="top" secondItem="63t-a7-82x" secondAttribute="top" constant="4" id="jGB-2e-fI3"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -259,7 +259,7 @@
                                                     <rect key="frame" x="10" y="10" width="50" height="50"/>
                                                     <subviews>
                                                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JX2-e4-4lL" userLabel="Circle Button" customClass="SSTCircleButton">
-                                                            <rect key="frame" x="2" y="2" width="46" height="46"/>
+                                                            <rect key="frame" x="4" y="4" width="42" height="42"/>
                                                             <state key="normal" backgroundImage="Photo.jpg">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
@@ -272,10 +272,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="CtZ-PM-Vg3"/>
                                                         <constraint firstAttribute="width" constant="50" id="FHI-0E-5eM"/>
-                                                        <constraint firstAttribute="bottom" secondItem="JX2-e4-4lL" secondAttribute="bottom" constant="2" id="G1p-Tx-08f"/>
-                                                        <constraint firstItem="JX2-e4-4lL" firstAttribute="leading" secondItem="A8r-Ug-FHb" secondAttribute="leading" constant="2" id="jq9-aA-PSI"/>
-                                                        <constraint firstAttribute="trailing" secondItem="JX2-e4-4lL" secondAttribute="trailing" constant="2" id="pqf-Kv-XPW"/>
-                                                        <constraint firstItem="JX2-e4-4lL" firstAttribute="top" secondItem="A8r-Ug-FHb" secondAttribute="top" constant="2" id="sku-k4-SJq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JX2-e4-4lL" secondAttribute="bottom" constant="4" id="G1p-Tx-08f"/>
+                                                        <constraint firstItem="JX2-e4-4lL" firstAttribute="leading" secondItem="A8r-Ug-FHb" secondAttribute="leading" constant="4" id="jq9-aA-PSI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JX2-e4-4lL" secondAttribute="trailing" constant="4" id="pqf-Kv-XPW"/>
+                                                        <constraint firstItem="JX2-e4-4lL" firstAttribute="top" secondItem="A8r-Ug-FHb" secondAttribute="top" constant="4" id="sku-k4-SJq"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

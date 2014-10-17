@@ -39,7 +39,9 @@ CGFloat const SSTCircleButtonBorderAnimationDuration = 0.25f;
     CGFloat cornerRadius = CGRectGetWidth(self.frame) / 2;
     
     if (self.layer.cornerRadius != cornerRadius) {
-        self.borderColor = self.superview.backgroundColor;
+        if (![[UIColor clearColor] isEqual:self.superview.backgroundColor]) {
+            self.borderColor = self.superview.backgroundColor;
+        }
         
         self.layer.cornerRadius = cornerRadius;
         self.layer.masksToBounds = YES;

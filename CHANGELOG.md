@@ -20,3 +20,7 @@ Added support to hide the border for a button with the new `borderHidden` proper
 
 Added animation transition for button border showing/hiding.
 
+## 1.1.2
+
+Fix for view lifecycle changed in iOS.
+
