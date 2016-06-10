@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "CircleButton"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "Easy way to create buttons masked in a circle with colored border without the anti-aliasing distortion"
   s.description      = <<-DESC
 When setting the corner radius, border color and border width there is often bleeding through to the 

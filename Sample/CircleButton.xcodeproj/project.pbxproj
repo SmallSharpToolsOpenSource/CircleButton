@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262EDA811D0B5BE60028829B /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262EDA801D0B5BE60028829B /* Launch.storyboard */; };
 		264C650D18C91ABD0069B9AE /* SSTCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C650918C91ABD0069B9AE /* SSTCircleButton.m */; };
 		264C650E18C91ABD0069B9AE /* SSTCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C650A18C91ABD0069B9AE /* SSTCircleImageView.m */; };
 		264C650F18C91ABD0069B9AE /* SSTCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C650B18C91ABD0069B9AE /* SSTCircleView.m */; };
@@ -22,25 +23,11 @@
 		2699DAEF18334A93008E7DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2699DAED18334A93008E7DC3 /* Main.storyboard */; };
 		2699DAF218334A93008E7DC3 /* SSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699DAF118334A93008E7DC3 /* SSTViewController.m */; };
 		2699DAF418334A93008E7DC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2699DAF318334A93008E7DC3 /* Images.xcassets */; };
-		2699DAFB18334A93008E7DC3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DAFA18334A93008E7DC3 /* XCTest.framework */; };
-		2699DAFC18334A93008E7DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DADB18334A93008E7DC3 /* Foundation.framework */; };
-		2699DAFD18334A93008E7DC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2699DADF18334A93008E7DC3 /* UIKit.framework */; };
-		2699DB0518334A93008E7DC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2699DB0318334A93008E7DC3 /* InfoPlist.strings */; };
-		2699DB0718334A93008E7DC3 /* CircleButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699DB0618334A93008E7DC3 /* CircleButtonTests.m */; };
 		2699DB1118334AC0008E7DC3 /* Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2699DB1018334AC0008E7DC3 /* Photo.jpg */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2699DAFE18334A93008E7DC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2699DAD018334A93008E7DC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2699DAD718334A93008E7DC3;
-			remoteInfo = CircleButton;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		262EDA801D0B5BE60028829B /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = CircleButton/Launch.storyboard; sourceTree = "<group>"; };
 		264C650518C91ABC0069B9AE /* SSTCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSTCircleButton.h; path = ../../Classes/SSTCircleButton.h; sourceTree = "<group>"; };
 		264C650618C91ABD0069B9AE /* SSTCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSTCircleImageView.h; path = ../../Classes/SSTCircleImageView.h; sourceTree = "<group>"; };
 		264C650718C91ABD0069B9AE /* SSTCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSTCircleView.h; path = ../../Classes/SSTCircleView.h; sourceTree = "<group>"; };
@@ -67,11 +54,9 @@
 		2699DAF018334A93008E7DC3 /* SSTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSTViewController.h; sourceTree = "<group>"; };
 		2699DAF118334A93008E7DC3 /* SSTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSTViewController.m; sourceTree = "<group>"; };
 		2699DAF318334A93008E7DC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2699DAF918334A93008E7DC3 /* CircleButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2699DAFA18334A93008E7DC3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2699DB0218334A93008E7DC3 /* CircleButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CircleButtonTests-Info.plist"; sourceTree = "<group>"; };
 		2699DB0418334A93008E7DC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2699DB0618334A93008E7DC3 /* CircleButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleButtonTests.m; sourceTree = "<group>"; };
 		2699DB1018334AC0008E7DC3 /* Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,16 +68,6 @@
 				2699DADE18334A93008E7DC3 /* CoreGraphics.framework in Frameworks */,
 				2699DAE018334A93008E7DC3 /* UIKit.framework in Frameworks */,
 				2699DADC18334A93008E7DC3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2699DAF618334A93008E7DC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2699DAFB18334A93008E7DC3 /* XCTest.framework in Frameworks */,
-				2699DAFD18334A93008E7DC3 /* UIKit.framework in Frameworks */,
-				2699DAFC18334A93008E7DC3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +92,7 @@
 		2699DACF18334A93008E7DC3 = {
 			isa = PBXGroup;
 			children = (
+				262EDA801D0B5BE60028829B /* Launch.storyboard */,
 				2699DAE118334A93008E7DC3 /* CircleButton */,
 				2699DB0018334A93008E7DC3 /* CircleButtonTests */,
 				2699DADA18334A93008E7DC3 /* Frameworks */,
@@ -128,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				2699DAD818334A93008E7DC3 /* CircleButton.app */,
-				2699DAF918334A93008E7DC3 /* CircleButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +153,6 @@
 		2699DB0018334A93008E7DC3 /* CircleButtonTests */ = {
 			isa = PBXGroup;
 			children = (
-				2699DB0618334A93008E7DC3 /* CircleButtonTests.m */,
 				2699DB0118334A93008E7DC3 /* Supporting Files */,
 			);
 			path = CircleButtonTests;
@@ -213,24 +187,6 @@
 			productReference = 2699DAD818334A93008E7DC3 /* CircleButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2699DAF818334A93008E7DC3 /* CircleButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2699DB0D18334A93008E7DC3 /* Build configuration list for PBXNativeTarget "CircleButtonTests" */;
-			buildPhases = (
-				2699DAF518334A93008E7DC3 /* Sources */,
-				2699DAF618334A93008E7DC3 /* Frameworks */,
-				2699DAF718334A93008E7DC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2699DAFF18334A93008E7DC3 /* PBXTargetDependency */,
-			);
-			name = CircleButtonTests;
-			productName = CircleButtonTests;
-			productReference = 2699DAF918334A93008E7DC3 /* CircleButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,13 +194,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SST;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "SmallSharpTools LLC";
-				TargetAttributes = {
-					2699DAF818334A93008E7DC3 = {
-						TestTargetID = 2699DAD718334A93008E7DC3;
-					};
-				};
 			};
 			buildConfigurationList = 2699DAD318334A93008E7DC3 /* Build configuration list for PBXProject "CircleButton" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -260,7 +211,6 @@
 			projectRoot = "";
 			targets = (
 				2699DAD718334A93008E7DC3 /* CircleButton */,
-				2699DAF818334A93008E7DC3 /* CircleButtonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,17 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2699DAF418334A93008E7DC3 /* Images.xcassets in Resources */,
+				262EDA811D0B5BE60028829B /* Launch.storyboard in Resources */,
 				2699DAE618334A93008E7DC3 /* InfoPlist.strings in Resources */,
 				2699DB1118334AC0008E7DC3 /* Photo.jpg in Resources */,
 				2699DAEF18334A93008E7DC3 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2699DAF718334A93008E7DC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2699DB0518334A93008E7DC3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,23 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2699DAF518334A93008E7DC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2699DB0718334A93008E7DC3 /* CircleButtonTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2699DAFF18334A93008E7DC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2699DAD718334A93008E7DC3 /* CircleButton */;
-			targetProxy = 2699DAFE18334A93008E7DC3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2699DAE418334A93008E7DC3 /* InfoPlist.strings */ = {
@@ -368,6 +295,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -429,6 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
 				INFOPLIST_FILE = "CircleButton/CircleButton-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smallsharptools.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -444,49 +373,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
 				INFOPLIST_FILE = "CircleButton/CircleButton-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smallsharptools.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		2699DB0E18334A93008E7DC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CircleButton.app/CircleButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CircleButtonTests/CircleButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2699DB0F18334A93008E7DC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CircleButton.app/CircleButton";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CircleButton/CircleButton-Prefix.pch";
-				INFOPLIST_FILE = "CircleButtonTests/CircleButtonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -507,15 +397,6 @@
 			buildConfigurations = (
 				2699DB0B18334A93008E7DC3 /* Debug */,
 				2699DB0C18334A93008E7DC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2699DB0D18334A93008E7DC3 /* Build configuration list for PBXNativeTarget "CircleButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2699DB0E18334A93008E7DC3 /* Debug */,
-				2699DB0F18334A93008E7DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

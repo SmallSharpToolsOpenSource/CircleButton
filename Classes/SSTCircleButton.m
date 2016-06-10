@@ -66,8 +66,8 @@ CGFloat const SSTCircleButtonBorderAnimationDuration = 0.25f;
         CGFloat yDelta = maxWidth / backgroundImage.size.height;
         CGFloat delta = xDelta > yDelta ? xDelta : yDelta;
         
-        CGFloat x = floorf((self.bounds.size.width - (backgroundImage.size.width * delta)) / 2);
-        CGFloat y = floorf((self.bounds.size.height - (backgroundImage.size.height * delta)) / 2);
+        CGFloat x = floor((self.bounds.size.width - (backgroundImage.size.width * delta)) / 2);
+        CGFloat y = floor((self.bounds.size.height - (backgroundImage.size.height * delta)) / 2);
         
         return CGRectMake(x, y, backgroundImage.size.width * delta, backgroundImage.size.height * delta);
     }
